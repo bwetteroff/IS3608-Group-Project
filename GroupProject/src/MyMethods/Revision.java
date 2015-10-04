@@ -3,13 +3,13 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package SourceCode;
+package MyMethods;
 
 /**
  *
  * @author wetteb
  */
-public class Source
+public class Revision
 {
     
 }
