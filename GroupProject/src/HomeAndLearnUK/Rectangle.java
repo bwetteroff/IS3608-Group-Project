@@ -20,7 +20,8 @@ public class Rectangle
         length = JOptionPane.showInputDialog("Enter the length of your rectangle.");
         width = JOptionPane.showInputDialog("Enter the width of your rectangle.");
                 
-        int area = (Integer.parseInt(length) * Integer.parseInt(width));
-        JOptionPane.showMessageDialog(null,"answer = " + area);   
+        float area = (Float.parseFloat(length) * Float.parseFloat(width));
+        JOptionPane.showMessageDialog(null,"Area = " + area); 
+        System.exit(0);
     }
 }
