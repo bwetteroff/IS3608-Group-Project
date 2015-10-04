@@ -13,51 +13,46 @@ import java.util.Scanner;
  */
 public class MyMethods
 {
-    public static void ProductNoNegatives()
+    public void ProductNoNegatives()
     {
         
     }
     
-    public static void LetterGrade()
+    public void LetterGrade()
     {
         int input, sumA, sumB, sumC, sumD, sumF;
 	sumA=sumB=sumC=sumD=sumF=0;
 	
-        Scanner sc = new Scanner(System.in)
+        Scanner sc = new Scanner(System.in);
         input = sc.nextInt();
 
             if(input>=90)
             {
                 sumA++;
-                System.out.println(new Integer(input) + "      A");
+                System.out.println(input + "      A");
 	    }
             else if(input >= 70){
                 sumB++;
-                System.out.println(new Integer(input) + "      B");
+                System.out.println(input + "      B");
             }
             else if(input >= 50){
                 sumC++;
-                System.out.println(new Integer(input) + "      C");
+                System.out.println(input + "      C");
             }
             else if(input >= 35){
                 sumD++;
-                System.out.println(new Integer(input) + "      D");
+                System.out.println(input + "      D");
             }
             else{
                 sumF++;
-                System.out.println(new Integer(input) + "      F");
+                System.out.println(input + "      F");
             }
-
-            input = kbd.readInt();
-        }
         
-        System.out.println("The total number of A's is " + new Integer(sumA ));
-        System.out.println("The total number of B's is " + new Integer(sumB ));
-        System.out.println("The total number of C's is " + new Integer(sumC ));
-        System.out.println("The total number of D's is " + new Integer(sumD ));
-        System.out.println("The total number of F's is " + new Integer(sumF ));
-   } 
-}
-
+        System.out.println("The total number of A's is " + (sumA ));
+        System.out.println("The total number of A's is " + (sumA));
+        System.out.println("The total number of B's is " + (sumB ));
+        System.out.println("The total number of C's is " + (sumC ));
+        System.out.println("The total number of D's is " + (sumD ));
+        System.out.println("The total number of F's is " + (sumF ));
     }
-}
+} 
