@@ -15,7 +15,7 @@ public class RunMyMethods
 {
     public static void main(String[] args) 
     {
-        Scanner in = new Scanner(System.in);
+        Scanner sc = new Scanner(System.in);
         MyMethods M1 = new MyMethods();
         
         //Menu Print Out
@@ -29,8 +29,8 @@ public class RunMyMethods
         boolean quit = false;
         int menuItem;
         do {
-            System.out.print("Choose menu item: ");
-            menuItem = in.nextInt();
+            System.out.println("Choose menu item: ");
+            menuItem = sc.nextInt();
             switch (menuItem) 
             {
         case 1:
@@ -46,8 +46,9 @@ public class RunMyMethods
             // do something...
         break;
         case 4:
-            System.out.println("You've chosen item #4: Letter Grade");
+            System.out.println("You've chosen item #4: Letter Grade"); 
             M1.LetterGrade();
+            
         break;
         case 5:
             quit = true;
