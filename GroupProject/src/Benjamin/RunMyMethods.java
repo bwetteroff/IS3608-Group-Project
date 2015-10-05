@@ -16,15 +16,16 @@ public class RunMyMethods
     public static void main(String[] args) 
     {
         Scanner in = new Scanner(System.in);
-        // print menu
-        // for (int i = 1; i <= 5; i++)
+        MyMethods M1 = new MyMethods();
+        
+        //Menu Print Out
         System.out.println("My Methods:");
         System.out.println("1. Product no negatives");
         System.out.println("2. Find Twelve");
         System.out.println("3. Max Min Avg");
         System.out.println("4. Letter Grade");
         System.out.println("5. Exit");
-        // handle user commands
+        // Switch based Menu
         boolean quit = false;
         int menuItem;
         do {
@@ -46,7 +47,7 @@ public class RunMyMethods
         break;
         case 4:
             System.out.println("You've chosen item #4: Letter Grade");
-            // do something...
+            M1.LetterGrade();
         break;
         case 5:
             quit = true;
@@ -56,7 +57,7 @@ public class RunMyMethods
         }
     } 
     while (!quit);
-    System.out.println("Exit");
+    System.out.println("Exit: All Your Base Are Belong To Us");
     }
 }
 
