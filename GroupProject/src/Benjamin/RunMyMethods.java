@@ -37,7 +37,8 @@ public class RunMyMethods
             {
         case 1:
             System.out.println("You've chosen item #1: Product no negatives");
-            // do something...
+            M1.ProductNoNegatives();
+            
         break;
         case 2:
             System.out.println("You've chosen item #2: Find Twelve");
@@ -45,7 +46,7 @@ public class RunMyMethods
         break;
         case 3:
             System.out.println("You've chosen item #3: Max Min Avg");
-            // do something...
+            // do something...1
         break;
         case 4:
             System.out.println("You've chosen item #4: Letter Grade"); 

@@ -19,15 +19,26 @@ public class MyMethods
         
     public void ProductNoNegatives()
     {
+        System.out.println("This is a test, press 0 to exit");
         int prod = sc.nextInt();
-        
+        int nextint = 1;
+        int count = prod++;
         if (prod == 0)
         {
             System.exit(1);
         }
         while (prod != 0)
         {
+            if (prod < 0)
+            {
+                //do nothing
+            }
+            else if (prod > 0)
+            {
+                System.out.println("Total = ");
+            }
             System.out.println("prod test");
+            System.exit(prod);
         }
     }
     
