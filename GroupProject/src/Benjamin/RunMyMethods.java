@@ -19,16 +19,17 @@ public class RunMyMethods
         MyMethods M1 = new MyMethods();
         
         //Menu Print Out
-        System.out.println("My Methods:");
+        
+        // Switch based Menu
+        boolean quit = false;
+        int menuItem;
+        do {
+            System.out.println("My Methods:");
         System.out.println("1. Product no negatives");
         System.out.println("2. Find Twelve");
         System.out.println("3. Max Min Avg");
         System.out.println("4. Letter Grade");
         System.out.println("5. Exit");
-        // Switch based Menu
-        boolean quit = false;
-        int menuItem;
-        do {
             System.out.println("Choose menu item: ");
             menuItem = sc.nextInt();
             switch (menuItem) 
