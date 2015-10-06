@@ -6,6 +6,7 @@
 package Benjamin;
 
 import java.util.Scanner;
+import java.util.StringTokenizer;
 
 /**
  *
@@ -14,7 +15,7 @@ import java.util.Scanner;
 public class MyMethods
 {
     Scanner sc = new Scanner(System.in);
-    
+    StringTokenizer st = new StringTokenizer;
        
         
     public void ProductNoNegatives()
@@ -50,7 +51,22 @@ public class MyMethods
     public void MinMaxAvg ()
     {
         System.out.println("MinMaxAvg");
-        
+        string (10 20 30 40 50);
+        int input, max, sum, count;
+        float avg;
+    
+        st = new StringTokenizer(stringline);
+        while (st.hasMoreTokens())
+        {
+            input = Integer.parseInt(st.nextToken());
+            
+        }
+    
+    
+    
+    
+    
+    
     }
           
     public void LetterGrade()
