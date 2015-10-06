@@ -44,11 +44,12 @@ public class MyMethods
     
     public void FindTwelve()
     {
-        
+        System.out.println("FindTwelve");
     }
     
     public void MinMaxAvg ()
     {
+        System.out.println("MinMaxAvg");
         
     }
           
@@ -70,7 +71,6 @@ public class MyMethods
 
     while(input != -99)
         {
-
             if(input>=90)
             {
                 sumA++;

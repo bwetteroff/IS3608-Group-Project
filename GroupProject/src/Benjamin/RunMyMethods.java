@@ -15,11 +15,18 @@ public class RunMyMethods
 {
     public static void main(String[] args) 
     {
-        Scanner sc = new Scanner(System.in);
-        MyMethods M1 = new MyMethods();
+        
+        
+        RunMyMethods RMM = new RunMyMethods();
+        RMM.Menu();
+        
+    }    
         
         //Menu Print Out
-        
+    public void Menu()
+    {
+        Scanner sc = new Scanner(System.in);
+        MyMethods M1 = new MyMethods();
         // Switch based Menu
         boolean quit = false;
         int menuItem;
@@ -31,7 +38,7 @@ public class RunMyMethods
             System.out.println("3. Max Min Avg");
             System.out.println("4. Letter Grade");
             System.out.println("5. Exit");
-            System.out.println("Choose menu item: ");
+            System.out.print("Choose menu item: ");
             menuItem = sc.nextInt();
             switch (menuItem) 
             {
@@ -42,11 +49,11 @@ public class RunMyMethods
         break;
         case 2:
             System.out.println("You've chosen item #2: Find Twelve");
-            // do something...
+            M1.FindTwelve();
         break;
         case 3:
             System.out.println("You've chosen item #3: Max Min Avg");
-            // do something...1
+            M1.MinMaxAvg();
         break;
         case 4:
             System.out.println("You've chosen item #4: Letter Grade"); 
