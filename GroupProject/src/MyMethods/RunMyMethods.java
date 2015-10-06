@@ -4,8 +4,6 @@
  * and open the template in the editor.
  */
 package MyMethods;
-
-import Benjamin.*;
 import java.util.Scanner;
 
 /**

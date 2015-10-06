@@ -19,7 +19,16 @@ public class MyMethods
         
     public void ProductNoNegatives()
     {
+        int prod = sc.nextInt();
         
+        if (prod == 0)
+        {
+            System.exit(1);
+        }
+        while (prod != 0)
+        {
+            System.out.println("prod test");
+        }
     }
     
     public void FindTwelve()
@@ -42,9 +51,7 @@ public class MyMethods
         System.out.print("Please enter a grade [-99 to quit]: ");
         input = sc.nextInt();
         System.out.println(input);
-    //KbdInput kbd = new KbdInput();
-    //input = kbd.readInt();
-
+    
     if(input==-99)
         {
             System.exit(1);

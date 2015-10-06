@@ -5,7 +5,6 @@
  */
 package MyMethods;
 
-import Benjamin.*;
 import java.util.Scanner;
 
 /**
