@@ -24,12 +24,13 @@ public class RunMyMethods
         boolean quit = false;
         int menuItem;
         do {
+            System.out.println("");
             System.out.println("My Methods:");
-        System.out.println("1. Product no negatives");
-        System.out.println("2. Find Twelve");
-        System.out.println("3. Max Min Avg");
-        System.out.println("4. Letter Grade");
-        System.out.println("5. Exit");
+            System.out.println("1. Product no negatives");
+            System.out.println("2. Find Twelve");
+            System.out.println("3. Max Min Avg");
+            System.out.println("4. Letter Grade");
+            System.out.println("5. Exit");
             System.out.println("Choose menu item: ");
             menuItem = sc.nextInt();
             switch (menuItem) 
@@ -59,7 +60,7 @@ public class RunMyMethods
         }
     } 
     while (!quit);
-    System.out.println("Exit: All Your Base Are Belong To Us");
+    System.out.println("Exit");
     }
 }
 
