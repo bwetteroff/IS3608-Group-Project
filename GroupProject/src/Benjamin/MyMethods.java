@@ -15,7 +15,7 @@ import java.util.StringTokenizer;
 public class MyMethods
 {
     Scanner sc = new Scanner(System.in);
-    StringTokenizer st = new StringTokenizer;
+    //StringTokenizer st = new StringTokenizer;
        
         
     public void ProductNoNegatives()
@@ -51,17 +51,49 @@ public class MyMethods
     public void MinMaxAvg ()
     {
         System.out.println("MinMaxAvg");
-        string (10 20 30 40 50);
-        int input, max, sum, count;
-        float avg;
-    
-        st = new StringTokenizer(stringline);
-        while (st.hasMoreTokens())
+        String line = sc.nextLine();
+        int input, max, min, sum, count;
+        max = 0;
+        min = 0;
+        count = 0;
+        sum = 0;
+        
+        
+        input = sc.nextInt();
+        if (max <= input)
         {
-            input = Integer.parseInt(st.nextToken());
+            max = input;
+        }
+        if (min >= input)
+        {
+            min = input;
+        }
+        count++;
+        sum += input;
+        float avg = (sum / count);
+        System.out.println("Min is " + min);
+        System.out.println("Max is " + max);
+        System.out.println("Avg is " + avg);
+        
+        
+        
+//        st = new StringTokenizer(line);
+ //       while (st.hasMoreTokens())
+        {
+ //           input = Integer.parseInt(st.nextToken());
             
         }
-    
+         Scanner sc = new Scanner(System.in);
+        //String line = sc.nextLine();
+        
+//        StringTokenizer st = new StringTokenizer( line );
+//        int k = Integer.parseInt( st.nextToken() );
+//        float f = Float.parseFloat( st.nextToken());
+//        String s = st.nextToken();
+//
+//       while( st.hasMoreTokens() ) {
+//            s += " " + st.nextToken();
+ //       }   
     
     
     

@@ -21,13 +21,13 @@ public class ConsoleTest
 {
     public static void main(String[] args) throws IOException 
     {
-        int i = 10;
-        int j = 20;
-        double d = 99.101;
+//        int i = 10;
+//        int j = 20;
+//        double d = 99.101;
  
-        System.out.print( "Here are some values: " );
-        System.out.println( i + " " + j + " " + d );
-        System.out.println( "Enter an integer, a float, and a string:" );
+ //       System.out.print( "Here are some values: " );
+ //       System.out.println( i + " " + j + " " + d );
+ //       System.out.println( "Enter an integer, a float, and a string:" );
  
 //        BufferedReader br;
 //        br = new BufferedReader( new InputStreamReader( System.in ) );
@@ -45,9 +45,9 @@ public class ConsoleTest
             s += " " + st.nextToken();
         }
 
-        System.out.println( " Here's your data:" );
-        System.out.println( k );
-        System.out.println( f );
-        System.out.println( s );
+//        System.out.println( " Here's your data:" );
+//        System.out.println( k );
+//        System.out.println( f );
+//        System.out.println( s );
     }
 }
