@@ -19,6 +19,7 @@ public class MyMethods
         
     public void ProductNoNegatives()
     {
+       System.out.println("")
         int prod = sc.nextInt();
         
         if (prod == 0)
@@ -33,12 +34,12 @@ public class MyMethods
     
     public void FindTwelve()
     {
-        
+        System.out.println("I'm in Find Twelve");
     }
     
     public void MinMaxAvg ()
     {
-        
+        System.out.println("I'm in Min Max Avg");
     }
           
     public void LetterGrade()
