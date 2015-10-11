@@ -19,16 +19,26 @@ public class MyMethods
         
     public void ProductNoNegatives()
     {
-       System.out.println("")
+       System.out.println("Please enter your value to be multiplied.  No negative values"
+            + "and a Zero will exit.");
         int prod = sc.nextInt();
         
         if (prod == 0)
         {
             System.exit(1);
         }
-        while (prod != 0)
+        while (prod >= 0)
         {
-            System.out.println("prod test");
+            if (prod == 0)
+            {
+                break;
+            }
+            else 
+            {
+                int i = 1;
+                i *= prod;
+                System.out.println("Your answer is " + i);
+            }
         }
     }
     
