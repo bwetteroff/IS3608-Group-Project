@@ -1,3 +1,5 @@
+package JavaBookAnswers;
+
 //listing 1
 interface IVehicle {
   // Return the range.   

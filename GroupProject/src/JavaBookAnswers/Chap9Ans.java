@@ -1,3 +1,5 @@
+package JavaBookAnswers;
+
 //listing 1
 // An exception for stack-full errors.  
 class StackFullException extends Exception {  

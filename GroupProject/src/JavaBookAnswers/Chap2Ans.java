@@ -1,4 +1,4 @@
-package JavaAnswers;
+package JavaBookAnswers;
 
 //listing 1
 // Find prime numbers between 2 and 100. 

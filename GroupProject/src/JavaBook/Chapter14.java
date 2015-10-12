@@ -1,3 +1,8 @@
+
+import JavaBookAnswers.MyIntNum;
+import JavaBookAnswers.MyFunc;
+import JavaBookAnswers.NumericFunc;
+
 //listing 1
 // Demonstrate two simple lambda expressions. 
  

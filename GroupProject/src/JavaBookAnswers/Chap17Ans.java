@@ -1,3 +1,5 @@
+package JavaBookAnswers;
+
 //listing 1
 // Demonstrate Platform.exit().  
   

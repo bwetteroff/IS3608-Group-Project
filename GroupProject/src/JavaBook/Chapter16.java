@@ -1,6 +1,8 @@
 //listing 1
 // A simple Swing program. 
  
+import JavaBookAnswers.SwingFC;
+import JavaBookAnswers.ListDemo;
 import javax.swing.*; 
   
 class SwingDemo { 

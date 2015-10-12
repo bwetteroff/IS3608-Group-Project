@@ -1,4 +1,4 @@
-package JavaAnswers;
+package JavaBookAnswers;
 
 //listing 1
 enum Tools { 

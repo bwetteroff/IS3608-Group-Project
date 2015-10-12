@@ -1,3 +1,5 @@
+package JavaBookAnswers;
+
 //listing 1
 /* A simple banner applet that uses parameters.
 

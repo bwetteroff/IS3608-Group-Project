@@ -1,3 +1,5 @@
+package JavaBookAnswers;
+
 //listing 1
 // Average 10 double values. 
 class Avg { 

@@ -1,4 +1,4 @@
-package JavaAnswers;
+package JavaBookAnswers;
 
 //listing 1
 /* Copy a text file, substituting hyphens for spaces. 

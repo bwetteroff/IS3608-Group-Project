@@ -1,3 +1,5 @@
+package JavaBookAnswers;
+
 //listing 1
 interface NumericFunc {  
   int func(int n);  
