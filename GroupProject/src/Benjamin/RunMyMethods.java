@@ -15,11 +15,14 @@ public class RunMyMethods
 {
     public static void main(String[] args) 
     {
+        Menu();
+    }
+    
+        //Menu Print Out
+    public static void Menu()
+    {
         Scanner sc = new Scanner(System.in);
         MyMethods M1 = new MyMethods();
-        
-        //Menu Print Out
-        
         // Switch based Menu
         boolean quit = false;
         int menuItem;

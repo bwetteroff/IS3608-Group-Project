@@ -23,12 +23,11 @@ public class MinMaxAvg
         int sum, input;
         int max = input;
         int min = input;
+        input = Integer.parseInt(st.nextToken());
         
-        if count >0
+        if (count > 0)
             {
                 
             }
-        
-        
     }
 }

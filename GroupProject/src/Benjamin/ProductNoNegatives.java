@@ -15,8 +15,10 @@ import java.util.StringTokenizer;
 // */
 public class ProductNoNegatives
 {
-    public void Product()
+    public static void main(String[] args)
     {
+//    public void Product()
+//    {
         System.out.println("Please enter a series of numbers to be multiplied:");
         System.out.println("No negative values will be accepted:");
         System.out.println("A zero (0) will close the program.");
@@ -45,7 +47,8 @@ public class ProductNoNegatives
             if (prod == 0) System.out.println("You have entered a Zero value, the program will terminate:");
         }              
     }
-}      
+}    
+}  
 
 
 //{
