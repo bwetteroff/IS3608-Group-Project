@@ -25,6 +25,7 @@ public class MyMethods
         StringTokenizer st = new StringTokenizer(line);
         int variable, answer;
         variable =  1;
+        System.out.println("Number Entered \t" + "Product of input:");
         while ( st.hasMoreTokens() )
         {
             int prod = Integer.parseInt(st.nextToken());
@@ -34,8 +35,8 @@ public class MyMethods
                         {
                         answer = variable * prod;
                         variable = answer;
-                        System.out.println("Your number enterd is " + prod);
-                        System.out.println("The current product of your input is: " + answer);
+                        System.out.println(prod + "\t \t" + answer);
+                        //System.out.println("The current product of your input is: " + answer);
                         }
                     else 
                     {
