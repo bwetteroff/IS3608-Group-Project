@@ -26,20 +26,15 @@ public class Console
         System.out.print( "Here are some values: " );
         System.out.println( i + " " + j + " " + d );
         System.out.println( "Enter an integer, a float, and a string:" );
- 
-//        BufferedReader br;
-//        br = new BufferedReader( new InputStreamReader( System.in ) );
-//        String line = br.readLine();
-        
         Scanner sc = new Scanner(System.in);
         String line = sc.nextLine();
-        
         StringTokenizer st = new StringTokenizer( line );
         int k = Integer.parseInt( st.nextToken() );
         float f = Float.parseFloat( st.nextToken());
         String s = st.nextToken();
 
-       while( st.hasMoreTokens() ) {
+       while( st.hasMoreTokens() ) 
+       {
             s += " " + st.nextToken();
         }
 

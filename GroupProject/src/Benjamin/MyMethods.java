@@ -6,6 +6,7 @@
 package Benjamin;
 
 import java.util.Scanner;
+import java.util.StringTokenizer;
 
 /**
  *
@@ -19,27 +20,33 @@ public class MyMethods
         
     public void ProductNoNegatives()
     {
-       System.out.println("Please enter your value to be multiplied.  No negative values"
-            + "and a Zero will exit.");
-        int prod = sc.nextInt();
-        
-        if (prod == 0)
+        System.out.println("Please enter a series of numbers to be multiplied:");
+        System.out.println("No negative values will be accepted:");
+        System.out.println("A zero (0) will close the program.");
+        Scanner sc = new Scanner(System.in);
+        String line = sc.nextLine();
+        StringTokenizer st = new StringTokenizer(line);
+        int variable, answer;
+        variable =  1;
+        while ( st.hasMoreTokens() )
         {
-            System.exit(1);
-        }
-        while (prod >= 0)
-        {
-            if (prod == 0)
-            {
-                break;
-            }
-            else 
-            {
-                int i = 1;
-                i *= prod;
-                System.out.println("Your answer is " + i);
-            }
-        }
+            int prod = Integer.parseInt(st.nextToken());
+            if (prod != 0)
+                {
+                    if (prod > 0)
+                        {
+                        answer = variable * prod;
+                        variable = answer;
+                        System.out.println("Your number enterd is " + prod);
+                        System.out.println("The current product of your input is: " + answer);
+                        }
+                    else 
+                    {
+                        System.out.println("You have entered a negative number, and that number will be disregarded: " + prod);
+                    }
+                }
+            if (prod == 0) System.out.println("You have entered a Zero value, the program will terminate:");
+        }              
     }
     
     public void FindTwelve()
