@@ -17,7 +17,7 @@ public class RunMyMethods
     public static void main(String[] args) 
     {
         Scanner sc = new Scanner(System.in);
-        System.out.println("Press any key for menu:");
+        System.out.println("Press the Enter key for menu:");
         Menu();
     }
     
