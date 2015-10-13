@@ -17,38 +17,38 @@ public class Find12
     
     public static void main(String[] args)       
     {
+    System.out.println("Please enter your data set:");
     Scanner sc = new Scanner(System.in);
-    String line = sc.next();
+    String line = sc.nextLine();
     StringTokenizer st = new StringTokenizer(line);
- //       public FindTwelve()
+    int count, index, first = 0, last = 0;
+    index =  0;
+    count = 0;
+    while ( st.hasMoreTokens() )
         {
-        int sum = 1, count, index = 0;
-        while (st.hasMoreTokens())
+            int v = Integer.parseInt(st.nextToken());
+            //System.out.println("Current number is " + v);
+            if (v == 12)
             {
-                count = 1;
-                index = index++;
-                int v = Integer.parseInt(line);
-                
-                if (v != 12)
+                index = ++index;
+                count = ++count;
+                //System.out.println("index \t" + index + "\t" + "count \t" + count);
+                last = index;
+                if (count <= 1)
                 {
-                    System.out.println("You are in !12");
-                    count = count++;
-                    System.out.println("count is " + count);
-                    System.out.println("sum is " + sum);
-                    System.out.println("index is " + index);
+                    first = index;
                 }
-                else
-                    System.out.println("You are in == 12");
-                    count += count++;
-                    sum = sum++;
-                    System.out.println("count is " + count);
-                    System.out.println("sum is " + sum);
-                    System.out.println("index is " + index);
-                    
             }
+            else
+            {
+                index = ++index;
+                count = count;
+            }
+        last = index;
         }
+    System.out.println("The first occurance of 12 is at index " + first);
+    if (count>=1) System.out.println("The last occurance of 12 is at index " + last);
     }
-
 }
 
 
