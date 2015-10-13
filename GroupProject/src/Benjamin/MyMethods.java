@@ -15,6 +15,8 @@ import java.util.StringTokenizer;
 public class MyMethods
 {
     Scanner sc = new Scanner(System.in);
+    String line = sc.nextLine();
+    StringTokenizer st = new StringTokenizer(line);
     public void ProductNoNegatives()
     {
         System.out.println("Please enter a series of numbers to be multiplied:");
@@ -64,19 +66,20 @@ public class MyMethods
             {
                 index = ++index;
                 count = ++count;
-                //System.out.println("index \t" + index + "\t" + "count \t" + count);
                 last = index;
+                //System.out.println("index \t" + index + "\t" + "count \t" + count);
+                //last = index;
                 if (count <= 1)
                 {
                     first = index;
                 }
+                
             }
             else
             {
                 index = ++index;
-                count = count;
             }
-        last = index;
+        //last = index;
         }
     System.out.println("The first occurance of 12 is at index " + first);
     if (count>=1) System.out.println("The last occurance of 12 is at index " + last);
@@ -84,7 +87,42 @@ public class MyMethods
     
     public void MinMaxAvg ()
     {
-        System.out.println("I'm in Min Max Avg");
+        System.out.println("Please enter your data set:");
+        Scanner sc = new Scanner(System.in);
+        String line = sc.nextLine();
+        StringTokenizer st = new StringTokenizer(line);
+        int num = 0;
+        double min = 0, max = 0, avg = 0, sum = 0;
+        while (st.hasMoreTokens())
+        {
+            int input = Integer.parseInt(st.nextToken());
+                
+                if (num == 0)
+                {
+                    min = input;
+                    max = input;
+                }
+                num = ++num;
+                if (min > input)
+                    {
+                        min = input;
+                    }
+                if (max < input)
+                    {
+                        max = input;
+                    }
+            sum += input;
+            avg = (sum/num);   
+        }
+            //System.out.println("sum \t " + sum);
+            System.out.println("min \t" + min);
+            System.out.println("max \t" + max);
+            //System.out.println("count \t" + num);
+            System.out.println("avg \t" + avg);
+            
+        
+        
+            
     }
           
     public void LetterGrade()
@@ -129,19 +167,18 @@ public class MyMethods
                     System.out.println(input + "      F");
                 }
                
-            System.out.print("Please enter another grade [-99 to quit]: ");
+            System.out.println("Please enter another grade [-99 to quit]: ");
             input = sc.nextInt();
         }
        
-        System.out.println("The total number of A's is " + (sumA));
-        System.out.println("A's are from 90 - 100");
-        System.out.println("The total number of B's is " + (sumB ));
-        System.out.println("B's are from 70 - 89");
-        System.out.println("The total number of C's is " + (sumC ));
-        System.out.println("C's are from 50 - 69");
-        System.out.println("The total number of D's is " + (sumD ));
-        System.out.println("D's are from 35 - 49");
-        System.out.println("The total number of F's is " + (sumF ));
-        System.out.println("F's are from 0 - 34");
+        System.out.println("A's are from 90 - 100 \t" + "Total \t" + (sumA));
+        System.out.println("B's are from 70 - 89 \t" + "Total \t" + (sumB ));
+        //System.out.println("B's are from 70 - 89");
+        System.out.println("C's are from 50 - 69 \t" + "Total \t" + (sumC ));
+        //System.out.println("C's are from 50 - 69");
+        System.out.println("D's are from 35 - 49 \t" + "Total \t" + (sumD ));
+        //System.out.println("D's are from 35 - 49");
+        System.out.println("F's are from 0 - 34 \t" + "Total \t" + (sumF ));
+        //System.out.println("F's are from 0 - 34");
     }
 } 
