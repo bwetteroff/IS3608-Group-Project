@@ -30,7 +30,7 @@ public class MyMethods
         variable =  1;
         System.out.println("Number Entered \t" + "Product of input:");
         boolean quit = false;
-        while (quit != false)
+        do
         {
             while ( st.hasMoreTokens() )
             {
@@ -51,16 +51,17 @@ public class MyMethods
                 if (prod == 0) 
                 {
                     System.out.println("You have entered a Zero value, the program will terminate:");
-                    
+                    quit = true;
                 }
-
             }
-            
+            int token = st.countTokens();
+            if (token == 0)
             {
-                
-                quit = true;
+                ProductNoNegatives();
             }
-        }
+        }  
+        while (!quit);
+        System.out.println("Return to Menu");
     }
     
     public void FindTwelve()
