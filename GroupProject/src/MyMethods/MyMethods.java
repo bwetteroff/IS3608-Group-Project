@@ -26,28 +26,41 @@ public class MyMethods
         Scanner sc = new Scanner(System.in);
         String line = sc.nextLine();
         StringTokenizer st = new StringTokenizer(line);
-        int variable, answer;
+        int variable, answer, prod = 1;
         variable =  1;
         System.out.println("Number Entered \t" + "Product of input:");
-        while ( st.hasMoreTokens() )
+        boolean quit = false;
+        while (quit != false)
         {
-            int prod = Integer.parseInt(st.nextToken());
-            if (prod != 0)
-                {
-                    if (prod > 0)
-                        {
-                        answer = variable * prod;
-                        variable = answer;
-                        System.out.println(prod + "\t \t" + answer);
-                        //System.out.println("The current product of your input is: " + answer);
-                        }
-                    else 
+            while ( st.hasMoreTokens() )
+            {
+                prod = Integer.parseInt(st.nextToken());
+                if (prod != 0)
                     {
-                        System.out.println("You have entered a negative number, and that number will be disregarded: " + prod);
+                        if (prod > 0)
+                            {
+                            answer = variable * prod;
+                            variable = answer;
+                            System.out.println(prod + "\t \t" + answer);
+                            }
+                        else 
+                            {
+                                System.out.println(prod + " will be disregarded: ");
+                            }
                     }
+                if (prod == 0) 
+                {
+                    System.out.println("You have entered a Zero value, the program will terminate:");
+                    
                 }
-            if (prod == 0) System.out.println("You have entered a Zero value, the program will terminate:");
-        }              
+
+            }
+            
+            {
+                
+                quit = true;
+            }
+        }
     }
     
     public void FindTwelve()
@@ -62,25 +75,20 @@ public class MyMethods
     while ( st.hasMoreTokens() )
         {
             int v = Integer.parseInt(st.nextToken());
-            //System.out.println("Current number is " + v);
             if (v == 12)
             {
                 index = ++index;
                 count = ++count;
                 last = index;
-                //System.out.println("index \t" + index + "\t" + "count \t" + count);
-                //last = index;
                 if (count <= 1)
                 {
                     first = index;
-                }
-                
+                }   
             }
             else
             {
                 index = ++index;
             }
-        //last = index;
         }
     System.out.println("The first occurance of 12 is at index " + first);
     if (count>=1) System.out.println("The last occurance of 12 is at index " + last);
@@ -97,13 +105,12 @@ public class MyMethods
         while (st.hasMoreTokens())
         {
             int input = Integer.parseInt(st.nextToken());
-                
                 if (num == 0)
                 {
                     min = input;
                     max = input;
                 }
-                num = ++num;
+                num++;
                 if (min > input)
                     {
                         min = input;
@@ -115,15 +122,9 @@ public class MyMethods
             sum += input;
             avg = (sum/num);   
         }
-            //System.out.println("sum \t " + sum);
             System.out.println("min \t" + min);
             System.out.println("max \t" + max);
-            //System.out.println("count \t" + num);
-            System.out.println("avg \t" + avg);
-            
-        
-        
-            
+            System.out.println("avg \t" + avg);   
     }
           
     public void LetterGrade()
@@ -138,10 +139,8 @@ public class MyMethods
         {
             System.exit(1);
         }
-
     while(input != -99)
         {
-
             if(input>=90)
                 {
                     sumA++;
@@ -166,20 +165,14 @@ public class MyMethods
                 {
                     sumF++;
                     System.out.println(input + "      F");
-                }
-               
+                }      
             System.out.println("Please enter another grade [-99 to quit]: ");
             input = sc.nextInt();
         }
-       
         System.out.println("A's are from 90 - 100 \t" + "Total \t" + (sumA));
         System.out.println("B's are from 70 - 89 \t" + "Total \t" + (sumB ));
-        //System.out.println("B's are from 70 - 89");
         System.out.println("C's are from 50 - 69 \t" + "Total \t" + (sumC ));
-        //System.out.println("C's are from 50 - 69");
         System.out.println("D's are from 35 - 49 \t" + "Total \t" + (sumD ));
-        //System.out.println("D's are from 35 - 49");
         System.out.println("F's are from 0 - 34 \t" + "Total \t" + (sumF ));
-        //System.out.println("F's are from 0 - 34");
     }
 } 
