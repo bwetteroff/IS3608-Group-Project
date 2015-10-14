@@ -28,7 +28,7 @@ public class RunMyMethods
         MyMethods M1 = new MyMethods();
         // Switch based Menu
         boolean quit = false;
-        int menuItem;
+        String menuItem;
         do {
             System.out.println("My Methods:");
             System.out.println("1. Product no negatives");
@@ -37,8 +37,8 @@ public class RunMyMethods
             System.out.println("4. Letter Grade");
             System.out.println("5. Exit");
             System.out.print("Choose menu item: ");
-            menuItem = sc.nextInt();
-            switch (menuItem) 
+            menuItem = sc.next();
+            switch (Integer.parseInt(menuItem)) 
             {
         case 1:
             System.out.println("You've chosen item #1: Product no negatives");

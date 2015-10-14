@@ -30,10 +30,10 @@ public class MyMethods
         variable =  1;
         System.out.println("Number Entered \t" + "Product of input:");
         boolean quit = false;
-        do
-        {
-            while ( st.hasMoreTokens() )
+        while (!quit)
             {
+                if ( st.hasMoreTokens() )
+                {
                 prod = Integer.parseInt(st.nextToken());
                 if (prod != 0)
                     {
@@ -53,14 +53,18 @@ public class MyMethods
                     System.out.println("You have entered a Zero value, the program will terminate:");
                     quit = true;
                 }
+//                if (!quit)
+//                        {
+//                            ProductNoNegatives();
+//                        }
             }
-            int token = st.countTokens();
-            if (token == 0)
+//            int token = st.countTokens();
+//            if (token == 0)
             {
-                ProductNoNegatives();
+                
+                
             }
-        }  
-        while (!quit);
+            }
         System.out.println("Return to Menu");
     }
     
