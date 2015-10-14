@@ -9,7 +9,7 @@ import java.util.Scanner;
 public class MyMethods {
 public static void main(String args[]){
 Scanner sc = new Scanner(System.in);
-boolean exit = true;
+boolean exit = false;
 int menulist;
 do{
 System.out.println("My Methods menu list:");
