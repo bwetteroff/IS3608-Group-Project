@@ -24,27 +24,33 @@ public class ProdNoNeg
     StringTokenizer st = new StringTokenizer(line);
     public static void main(String args[])
     {
-        System.out.println("Please enter a series of numbers to be multiplied:");
-        System.out.println("No negative values will be accepted:");
-        System.out.println("A zero (0) will close the program.");
-        Scanner sc = new Scanner(System.in);
-        String line = sc.nextLine();
-        StringTokenizer st = new StringTokenizer(line);
-        int variable, answer, prod = 1;
-        variable =  1;
-        System.out.println("Number Entered \t" + "Product of input:");
+        
         boolean quit = false;
-        while (quit != false)
+        while (!quit)
         {
+            System.out.println("Please enter a series of numbers to be multiplied:");
+            System.out.println("No negative values will be accepted:");
+            System.out.println("A zero (0) will close the program.");
+            Scanner sc = new Scanner(System.in);
+            String line = sc.nextLine();
+            StringTokenizer st = new StringTokenizer(line);
+            int variable, answer, prod = 1;
+            variable =  1;
             while ( st.hasMoreTokens() )
             {
                 prod = Integer.parseInt(st.nextToken());
-                if (prod != 0)
+                if (prod == 0) 
+                {
+                    System.out.println("You have entered a Zero value, the program will terminate:");
+                    quit = true;
+                }
+                else
                     {
                         if (prod > 0)
                             {
                             answer = variable * prod;
                             variable = answer;
+                            System.out.println("Integer: \t" + "Product Total:");
                             System.out.println(prod + "\t \t" + answer);
                             }
                         else 
@@ -52,17 +58,6 @@ public class ProdNoNeg
                                 System.out.println(prod + " will be disregarded: ");
                             }
                     }
-                if (prod == 0) 
-                {
-                    System.out.println("You have entered a Zero value, the program will terminate:");
-                    
-                }
-
-            }
-            
-            {
-                
-                quit = true;
             }
         }
     }
