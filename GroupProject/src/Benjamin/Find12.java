@@ -11,7 +11,7 @@ import java.util.Scanner;
  *
  * @author wetteb
  */
-public class RunMyMethods
+public class Find12
 {
     public static void main(String[] args) 
     {

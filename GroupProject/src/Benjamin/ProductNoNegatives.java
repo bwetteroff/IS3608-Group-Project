@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package DevTestEnvironment;
+package Benjamin;
 
 /**
  *
@@ -17,7 +17,7 @@ import java.util.StringTokenizer;
  *
  * @author wetteb
  */
-public class ProdNoNeg
+public class ProductNoNegatives
 {
     Scanner sc = new Scanner(System.in);
     String line = sc.nextLine();
