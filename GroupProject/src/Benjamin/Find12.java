@@ -6,6 +6,7 @@
 package Benjamin;
 
 import java.util.Scanner;
+import java.util.StringTokenizer;
 
 /**
  *
@@ -13,59 +14,41 @@ import java.util.Scanner;
  */
 public class Find12
 {
-    public static void main(String[] args) 
-    {
-        Scanner sc = new Scanner(System.in);
-        System.out.println("Press any key for menu:");
-        Menu();
-    }
     
-        //Menu Print Out
-    public static void Menu()
+    public static void main(String[] args)       
     {
-        Scanner sc = new Scanner(System.in);
-        MyMethods M1 = new MyMethods();
-        // Switch based Menu
-        boolean quit = false;
-        int menuItem;
-        do {
-            System.out.println("My Methods:");
-            System.out.println("1. Product no negatives");
-            System.out.println("2. Find Twelve");
-            System.out.println("3. Max Min Avg");
-            System.out.println("4. Letter Grade");
-            System.out.println("5. Exit");
-            System.out.print("Choose menu item: ");
-            menuItem = sc.nextInt();
-            switch (menuItem) 
+    System.out.println("Please enter your data set:");
+    Scanner sc = new Scanner(System.in);
+    String line = sc.nextLine();
+    StringTokenizer st = new StringTokenizer(line);
+    int count, index, first = 0, last = 0;
+    index =  0;
+    count = 0;
+    while ( st.hasMoreTokens() )
+        {
+            int v = Integer.parseInt(st.nextToken());
+            //System.out.println("Current number is " + v);
+            if (v == 12)
             {
-        case 1:
-            System.out.println("You've chosen item #1: Product no negatives");
-            M1.ProductNoNegatives();
-        break;
-        case 2:
-            System.out.println("You've chosen item #2: Find Twelve");
-            M1.FindTwelve();
-        break;
-        case 3:
-            System.out.println("You've chosen item #3: Max Min Avg");
-            M1.MinMaxAvg();
-        break;
-              
-        case 4:
-            System.out.println("You've chosen item #4: Letter Grade"); 
-            M1.LetterGrade();
-            
-        break;
-        case 5:
-            quit = true;
-        break;
-        default:
-            System.out.println("Invalid menu choice, please select again.");
+                index = ++index;
+                count = ++count;
+                //System.out.println("index \t" + index + "\t" + "count \t" + count);
+                last = index;
+                if (count <= 1)
+                {
+                    first = index;
+                }
+            }
+            else
+            {
+                index = ++index;
+                count = count;
+            }
+        last = index;
         }
-    } 
-    while (!quit);
-    System.out.println("Exit");
+    System.out.println("The first occurance of 12 is at index " + first);
+    if (count>=1) System.out.println("The last occurance of 12 is at index " + last);
     }
 }
+
 
