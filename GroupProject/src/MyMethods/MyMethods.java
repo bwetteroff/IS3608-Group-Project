@@ -30,9 +30,7 @@ public class MyMethods
         variable =  1;
         System.out.println("Number Entered \t" + "Product of input:");
         boolean quit = false;
-        while (!quit)
-            {
-                if ( st.hasMoreTokens() )
+        while ( st.hasMoreTokens() )
                 {
                 prod = Integer.parseInt(st.nextToken());
                 if (prod != 0)
@@ -61,10 +59,7 @@ public class MyMethods
 //            int token = st.countTokens();
 //            if (token == 0)
             {
-                
-                
-            }
-            }
+    }
         System.out.println("Return to Menu");
     }
     
