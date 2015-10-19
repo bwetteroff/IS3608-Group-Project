@@ -1,4 +1,7 @@
-Enter file contents herepackage what.izthis.sheet;
+//Enter file contents herepackage what.izthis.sheet;
+
+package Chelsea;
+
 
 import java.io.IOException;
 import java.util.Scanner;
@@ -8,10 +11,11 @@ import java.util.Scanner;
  *
  * @author cacb88
  */
-public class FindTwelve {
+public class FindTwelve 
+{
      public static void main(String[] args) throws IOException 
      {
-Scanner sc = new Scanner(System.in);
+        Scanner sc = new Scanner(System.in);
        int input, sumx, sumy;
        sumx = sumy =  0;
        System.out.println("Enter some numbers, -1 lets you quit");
@@ -40,4 +44,4 @@ Scanner sc = new Scanner(System.in);
            System.out.println("Number of non-twelves \t" +(sumy));
            }
      }
-     }
+}
