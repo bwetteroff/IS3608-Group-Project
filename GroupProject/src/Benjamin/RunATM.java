@@ -24,8 +24,7 @@ public class RunATM
     public static void menu()
     {
         Scanner sc = new Scanner(System.in);
-        MyMethods M1 = new MyMethods();
-        // Switch based Menu
+        ATM A1 = new ATM();
         boolean quit = false;
         String menuItem;
         do {
@@ -40,15 +39,15 @@ public class RunATM
             {
         case 1:
             System.out.println("You have choosen to deposit:");
-            
+            A1.Deposit();
         break;
         case 2:
             System.out.println("You have choosen to withdraw:");
-            
+            A1.Withdraw();
         break;
         case 3:
             System.out.println("You have choosen to check your balance:");
-           
+            A1.CheckBalance();
         break;
               
         case 4:
@@ -61,5 +60,4 @@ public class RunATM
     while (!quit);
     System.out.println("Exit");
     }
-    
 }

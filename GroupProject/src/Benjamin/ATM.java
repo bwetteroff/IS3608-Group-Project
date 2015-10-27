@@ -12,8 +12,20 @@ package Benjamin;
  */
 public class ATM 
 {
+    public void Deposit()
+    {
+        System.out.println("You are in Deposit");
+    }
     
+    public void Withdraw()
+    {
+        System.out.println("You are in Withdraw");
+    }
     
+    public void CheckBalance()
+    {
+        System.out.println("You are in Check Balance");
+    }
     
     
 }
