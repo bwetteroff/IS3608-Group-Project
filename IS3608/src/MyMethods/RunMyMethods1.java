@@ -3,16 +3,17 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Benjamin;
+package MyMethods;
 
 
+import MyMethods.MyMethods1;
 import java.util.Scanner;
 
 /**
  *
  * @author wetteb
  */
-public class RunMyMethods
+public class RunMyMethods1
 {
     public static void main(String[] args) 
     {
@@ -25,7 +26,7 @@ public class RunMyMethods
     public static void Menu()
     {
         Scanner sc = new Scanner(System.in);
-        MyMethods M1 = new MyMethods();
+        MyMethods1 M1 = new MyMethods1();
         // Switch based Menu
         boolean quit = false;
         String menuItem;

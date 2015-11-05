@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Benjamin;
+package MyMethods;
 
 
 import java.util.Scanner;
@@ -13,7 +13,7 @@ import java.util.StringTokenizer;
  *
  * @author wetteb
  */
-public class MyMethods
+public class MyMethods1
 {
     Scanner sc = new Scanner(System.in);
     String line = sc.nextLine();
