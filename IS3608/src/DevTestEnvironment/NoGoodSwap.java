@@ -40,7 +40,6 @@ public class NoGoodSwap
         int temp = argx;
         argx = argy;
         argy = temp;
-       
     }
    
     public void swap(int[] SwapArray) {
@@ -59,5 +58,4 @@ public class NoGoodSwap
         System.out.println(s1);
         System.out.println(s2);    
     }
-
 }
