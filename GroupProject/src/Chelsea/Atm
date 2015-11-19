@@ -1,0 +1,48 @@
+Enter file contents here
+package atm.money.$$;
+
+import java.util.Scanner;
+
+/**
+ *
+ * @author cacb88
+ */
+public class ATM {
+    
+
+    public static void main(String args[])
+{ 
+     Scanner sc = new Scanner(System.in); 
+    boolean exit = false; 
+     int menulist; 
+     do{ 
+     System.out.println("ATM:"); 
+    System.out.println("1.Deposit:"); 
+    System.out.println("2.Withdraw:"); 
+    System.out.println("3.Check Balance:"); 
+    System.out.println("5.Exit"); 
+    menulist = sc.nextInt(); 
+    switch (menulist){ 
+ 
+ 
+    case 1: 
+    System.out.println("Deposit:"); 
+    break ; 
+    case 2: 
+     System.out.println("Withdraw:"); 
+     //
+    break; 
+    case 3: 
+     System.out.println("Check Balance:"); 
+     break;
+     case 4: 
+      exit = true; 
+        break; 
+     default:  
+        System.out.println("!!"); 
+     } 
+   } 
+    while (!exit); 
+     System.out.println("Exit"); 
+     } 
+ } 
