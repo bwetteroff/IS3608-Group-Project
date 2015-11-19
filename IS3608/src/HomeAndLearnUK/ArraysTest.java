@@ -26,6 +26,7 @@ public class ArraysTest
         aryNums[5] = 18;
         
         Arrays.sort(aryNums);
+        
         int i;
         for (i=0; i < aryNums.length; i++)
         {
