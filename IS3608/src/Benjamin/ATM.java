@@ -35,44 +35,31 @@ public class ATM
     }
     public static void accountMenu()
     {
+        System.out.println("Welcome to WSSBC, /n" + "Wall Street Sucks Banking Corp.:");
+        System.out.println("Do you have an account?");
+        System.out.println("1 - Yes I have an account!");
+        System.out.println("2 - No, please assist me in setting up my account.");
         Scanner sc = new Scanner(System.in);
-        ATM A1 = new ATM();
-        boolean quit = false;
-        String menuItem;
-        do {
-            System.out.println("Welcome to your Bank Account:");
-            System.out.println("1. Deposit");
-            System.out.println("2. Withdraw");
-            System.out.println("3. Check Balance");
-            System.out.println("4. Exit");
-            System.out.print("Choose menu item: ");
-            menuItem = sc.next();
-            switch (Integer.parseInt(menuItem)) 
-            {
-        case 1:
-            System.out.println("You have choosen to deposit:");
-            A1.Deposit();
-        break;
-        case 2:
-            System.out.println("You have choosen to withdraw:");
-            A1.Withdraw();
-        break;
-        case 3:
-            System.out.println("You have choosen to check your balance:");
-            A1.CheckBalance();
-        break;
-              
-        case 4:
-            quit = true;
-        break;
-        default:
-            System.out.println("Invalid menu choice, please make another selection.");
+        System.out.println();
+        System.out.println("Enter \"1\", \"2\" or \"3\"");
+        int m1 = sc.nextInt();
+
+        while (m1 != 2) 
+        {
+        if (m1 < 1 || m1 > 2) 
+        {
+        System.out.println("Enter \"1\", \"2\"");
+        m1 = sc.nextInt();
         }
-    } 
-    while (!quit);
-    System.out.println("Exit");
+        else if(m1 == 1) 
+        {
+            
+        }
+        else if(m1 == 2) 
+        {
+            //newAccount
+        }
+        
+        }
     }
 }
-
-
-
